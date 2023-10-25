@@ -6,7 +6,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 class LRUCache(BaseCaching):
     """
-	Overwrite functions 'put' and 'get' for implement LRU caching system.
+    Overwrite functions 'put' and 'get' for implement LRU caching system.
     """
 
     def __init__(self):
