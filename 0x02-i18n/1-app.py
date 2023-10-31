@@ -6,6 +6,7 @@
 from flask import Flask, render_template
 from flask_babel import Babel
 
+
 class Config(object):
     """ Babel instantiate """
     LANGUAGES = ["en", "fr"]
@@ -16,6 +17,7 @@ class Config(object):
 app = Flask(__name__)
 app.config.from_object(Config)
 babel = Babel(app)
+
 
 @app.route('/')
 def hello_world():
